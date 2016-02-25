@@ -1,0 +1,40 @@
+<div class="row main home">
+    <div class="col-lg-6 col-md-12 col-xs-12 homeIntro">
+        <div class="enteteLogo">
+            <h1 class="homeSlug">Les solutions business qui vous réuississent</h1>
+        </div>
+        <div class="homeTexte">
+            <p>Avec plus de treize années passées à l’écoute du réseau tabac-presse, Bimedia invente chaque jour des solutions business qui lui réussissent et qui l’aident à vendre plus et mieux :</p>
+            <ul>
+                <li>gammes de matériels</li>
+                <li>logiciels métiers</li>
+                <li>services exclusifs et accompagnement professionnel</li>
+            </ul>
+            <p>En anticipant les besoins de la profession, Bimedia a, au fil du temps, amélioré le quotidien des milliers de buralistes, diffuseurs de presse et libraires</p>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-xs-12 homeNews">
+        <h2>Nouveautés Tabac Presse</h2>
+        <div data-ng-controller="NewsHomeTPCtrl">
+            <div class="media" data-ng-repeat="newsTP in newsTabacPresse">
+              <div class="media-middle col-xs-4 col-md-3">
+                  <img class="media-object img-responsive" ng-src="{{newsTP.mediaURL}}" alt="{{newsTP.mediaALT}}" />
+              </div>
+              <div class="media-body">
+                {{newsTP.txt}}
+                <a ui-sref="{{newsTP.url}}" class="headline">Lire la suite</a>
+              </div>
+            </div>
+       </div>
+    </div>
+    <br />
+    <div class="col-lg-6 col-md-6 col-xs-12 homeNews">
+        <h2>Nouveautés Boulangerie</h2>
+        <div data-ng-controller="NewsHomeBlgCtrl">
+            <div data-ng-repeat="newsBlg in newsBoulangerie">
+              <div class="col-xs-12 col-md-12" ng-bind-html="newsBlg.txt">
+              </div>
+            </div>
+       </div>
+    </div>
+</div>

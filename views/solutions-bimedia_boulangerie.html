@@ -1,0 +1,34 @@
+<div class="row main boulangerie">
+    <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="enteteLogo">
+            <h1>Boulangerie</h1>
+        </div>
+        <h3>La 1ère solution d’encaissement et de gestion conçue pour les boulangeries</h3>
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <h4>Les fonctionnalités de la solution Bimedia</h4>
+        <div data-ng-controller="BoulangerieCtrl" class="fonctions-boulangerie">
+           <div data-ng-repeat="fonction in Boulangerie">
+               <div class="col-lg-6 col-md-6 col-xs-12">
+                   <h3>{{fonction.nom}}</h3>
+                   <p>{{fonction.intro}}</p>
+                   <ul>
+                    <li data-ng-repeat="atouts in fonction.atouts">{{atouts}}</li>
+                   </ul>
+                   <p>{{fonction.plus}}</p>
+               </div>
+           </div>
+       </div>
+    </div>
+    <div class="col-xs-12">
+        <h4>L'engagement Bimedia</h4>
+        <div class="engagement">
+            <p>Chez Bimedia, votre satisfaction est notre première priorité. C’est pourquoi nous vous accompagnons au quotidien grâce à :</p>
+            <ul>
+                <li>Un centre de Relation Clients accessible 7j/7</li>
+                <li>Un service de télémaintenance et d’intervention sur site</li>
+                <li>des mises à jour régulières et une sauvegarde automatique sécurisée de vos données</li>
+            </ul>
+        </div>
+    </div>
+</div>

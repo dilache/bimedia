@@ -1,0 +1,79 @@
+[
+    {"nom": "Module encaissement",
+     "media": "",
+     "intro": "Encaissez en toute simplicité et retrouvez toutes les fonctionnalités avancées.",
+     "atouts": "",
+     "position": "background-position:0px 0px;",
+     "style":"float:right;"
+    },
+    {"nom": "Module Tabac",
+     "media": "",
+     "intro": "",
+     "atouts": [
+         "NEW Accès à distance avec mise à jour des stocks en temps réel.",
+         "Basculement entre la commande tabac et l’encaissement.",
+         "Mise à jour automatique des tarifs et du calendrier de commandes.",
+         "Intégration automatique des BCA."
+     ],
+     "position": "background-position:0px -73px;",
+     "style":"float:right;"
+    },
+    {"nom": "Module Presse",
+     "media": "",
+     "intro": "",
+     "atouts": [
+         "Simplicité et précision pour une gestion optimisée",
+         "Homologué Presstalis et MLP",
+         "Élue solution de gestion n°1 par les diffuseurs de presse"
+     ],
+     "plus": "*Étude en ligne Presstalis « Votre système de caisse » - avril 2012",
+     "position": "background-position:0px -190px",
+     "style":"float:left;"
+    },
+    {"nom": "Module Librairie",
+     "media": "",
+     "intro": "",
+     "atouts": [
+         "NEW Gestion des commandes par distributeur.",
+         "Gestion des abonnements FEL Complet et FEL à la Demande.",
+         "Gestion et pointage des livraisons.",
+         "Affichage des couvertures via Dilicom.",
+         "Historique des ventes par produit."
+     ],
+     "plus": "Un abonnement à Dilicom est obligatoire pour l’utilisation de ce module.",
+     "position": "background-position:0px -308px",
+     "style":"float:right;"
+    },
+    {"nom": "Module Gestion",
+     "media": "",
+     "intro": "",
+     "atouts": [
+         "NEW Accès intuitif à toutes les fonctions clés : lecture jour, recherche de tickets, suivi du chiffre d’affaire, de la fréquentation, comptage tiroir.",
+         "Consultation et modification des données à distance et en temps réel.",
+         "Pilotage des stocks en temps réel."
+     ],
+     "position": "background-position:0px -462px",
+     "style":"float:left;"
+    },
+    {"nom": "Module de communication",
+     "media": "",
+     "intro": "",
+     "atouts": [
+         "Information en temps réel des nouveautés et évolutions logicielles. ",
+         "Installation des applications métier et mises à jour.",
+         "Commandes facilitées : produits à marge, produits en dépôts de vente, téléphonie, moyens de paiement,..."
+     ],
+     "position": "background-position:0px -580px",
+     "style":"float:right;"
+    },
+    {"nom": "BimediaTV ",
+     "media": "",
+     "intro": "",
+     "atouts": [
+         "Animation point de vente via boucle informative et divertissante gérée par BimediaTV.",
+         "Espace de promotion personnelle."
+     ],
+     "position": "background-position:0px -698px",
+     "style":"float:left;"
+    }
+]

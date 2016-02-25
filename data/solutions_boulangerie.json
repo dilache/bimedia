@@ -1,0 +1,22 @@
+[
+    {"nom": "Gagnez du temps",
+     "class": "gain",
+     "intro": "Avec Bimedia, vous encaissez et gérez vos stocks en un clin d’œil. Vous pouvez même personnaliser le clavier de votre nouvelle caisse pour une efficacité maximale grâce à notre fonction d’identification du vendeur."
+    },
+    {"nom": "Pilotez",
+     "class": "pilotage",
+     "intro": "Que ce soit depuis votre caisse ou à distance grâce à un accès Internet sécurisé, vous disposez d’outils d’analyse et de statistiques pertinents (ventes, fréquentation, comparatif produits, etc.). L’idéal pour développer votre activité en toute simplicité !"
+    },
+    {"nom": "Optimisez votre comptabilité",
+     "class": "optimisation",
+     "intro": "Nous le savons, votre temps et vos données sont précieux. Avec Bimedia, vous gagnez en sérénité grâce à un export comptable directement exploitable."
+    },
+    {"nom": "Animez votre point de vente",
+     "class": "animation",
+     "intro": "Avec le second écran côté consommateur, vous faites agréablement patienter vos clients grâce à la diffusion de programmes ludiques et informatifs. Exclusivité Bimedia, le second écran vous permet de communiquer sur votre activité, de vendre des petites annonces aux particuliers et même des publicités locales à vos voisins artisans ou commerçants."
+    },
+    {"nom": "Facilitez votre métier",
+     "class": "metier",
+     "intro": "C’est parce que nous connaissons votre métier que notre caisse est spécialement conçue pour répondre aux besoins des boulangeries. Avec Bimedia, vous gérez les formules intelligentes, la vente au poids et les TVA sur place et à emporter."
+    }
+]
