@@ -1,0 +1,33 @@
+<ul class="sidebar" ng-controller="SidebarCtrl">
+    <li class="sidebar-main">
+      <a id="n" style="cursor:pointer;" title="menu">
+        NAVIGATION
+        <span class="menu-icon glyphicon glyphicon-transfer"></span>
+      </a>
+    </li>
+    <li class="sidebar-list coul_bimedia">
+      <a ui-sref="bimedia" class="headline" title="Bimedia">Bimedia <span class="menu-icon fa fa-angle-down fa-2x"></span></a>
+      <a ui-sref="bimedia.content({ content : 'societe' })" title="Les informations sur la société Bimedia">La société <span class="menu-icon fa fa-info fa-2x"></span></a>
+      <a ui-sref="bimedia.content({ content: 'presse' })" title="On parle de Bimedia">Revue de Presse <span class="menu-icon fa fa-copy fa-2x"></span></a>
+    </li>
+    <li class="sidebar-list coul_solution">
+      <a ui-sref="solutions-bimedia" class="headline" title="La solution bimedia">La solution bimedia <span class="menu-icon fa fa-angle-down fa-2x"></span></a>
+      <a ui-sref="materiel" title="Solution bimedia > Gamme de matériels">Gamme de matériels <span class="menu-icon fa fa-tasks fa-2x"></span></a>
+      <a ui-sref="logiciel" title="Solution bimedia > l'offre logicielle">l'offre logicielle <span class="menu-icon fa fa-database fa-2x"></span></a>
+      <a ui-sref="boulangerie" title="Solution bimedia > Bimedia Boulangerie">Bimedia Boulangerie <span class="menu-icon fa fa-th-list fa-2x"></span></a>
+    </li>
+    <li class="sidebar-list coul_activite">
+      <a ui-sref="diversifier" class="headline" title="Diversifier son actvité">Diversifier son actvité <span class="menu-icon fa fa-angle-down fa-2x"></span></a>
+      <a ui-sref="diversifier.content({ content: 'dematerialisation' })" title="Diversifier son actvité > dématérialisation">Produits dématérialisés <span class="menu-icon fa fa-sliders fa-2x"></span></a>
+      <a ui-sref="diversifier.content({ content: 'eshop' })" title="Diversifier son actvité > produits physiques">Les produits physiques <span class="menu-icon fa fa-cube fa-2x"></span></a>
+    </li>
+    <li class="sidebar-list coul_bimedianous">
+      <a ui-sref="bimedia-vous" class="headline" title="Bimedia et vous">Bimedia et vous <span class="menu-icon fa fa-heart-o fa-2x"></span></a>
+    </li>
+    <li class="sidebar-list coul_eshop">
+      <a href="http://www.bimedia-eshop.fr/" target="_blank" class="headline" title="Connectez-vous à votre compte e-shop BIMEDIA">E-shop <span class="menu-icon fa fa-shopping-cart fa-2x"></span></a>
+    </li>
+    <li class="sidebar-list coul_contact">
+      <a ui-sref="contact" class="headline" title="contact">contact <span class="menu-icon fa fa-envelope fa-2x"></span></a>
+    </li>
+</ul>

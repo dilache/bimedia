@@ -1,0 +1,42 @@
+<div class="row main solutions">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div data-ng-controller="GammeMaterielCtrl">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="enteteLogo">
+                    <h1>Solutions</h1>
+                </div>
+                <h2>Gamme de matériel</h2>
+                <h3>Une gamme de produits à l’efficacité éprouvée</h3>
+                <br />
+            </div>
+            <div data-ng-repeat="materiel in gammeMateriel">
+                <div class="media ecrans col-lg-6 col-md-6 col-xs-12" style="{{materiel.style}}">
+                    <div class="{{materiel.classDivImg}}">
+                        <div class="media"><img class="media-object img-responsive" ng-src="{{materiel.image}}" alt="{{materiel.nom}}" /></div><br />
+                        <ul>
+                            <li data-ng-repeat="atouts in materiel.atouts">{{atouts}}</li>
+                        </ul>
+                    </div>
+                    <div ng-show-when!="" class="{{materiel.classDivImgProduit}}">
+                        <img class="media-object img-responsive" ng-src="{{materiel.imgProduit}}" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear:left;"></div>
+        <br />
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <div data-ng-controller="GammeAutresCtrl">
+               <div class="media col-lg-12 col-md-12 col-xs-12" data-ng-repeat="materielA in gammeAutres">
+                   <div class="col-xs-12">
+                        <div class="media"><img class="media-object img-responsive" ng-src="{{materielA.image}}" alt="{{materielA.nom}}" /></div><br />
+                        <ul>
+                            <li data-ng-repeat="atouts in materielA.atouts">{{atouts}}</li>
+                        </ul>
+                       <p>{{materielA.plus}}</p>
+                    </div>
+               </div>
+           </div>
+       </div>
+    </div>
+</div>

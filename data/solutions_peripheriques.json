@@ -1,0 +1,11 @@
+[
+    {"nom": "Imprimante ticket Seiko",
+     "media": "../img/imprimante.png"
+    },
+    {"nom": "Scanner gryphon Datalogic",
+     "media": "../img/scanner.png"
+    },
+    {"nom": "Tiroir caisse Cashbase",
+     "media": "../img/tiroir-caisse.png"
+    }
+]

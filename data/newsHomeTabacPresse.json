@@ -1,0 +1,20 @@
+[
+    {"url": "bimedia.content({ content : 'materiels' })",
+     "txt": "Le module tabac évolue sur la caisse Bimedia ! Conçu avec et pour la profession, il est encore plus simple, plus beau, plus efficace",
+     "media" : "<img src=\"http://www.bimedia.com.fr/images/fonds/actu_module_tabac2.png\" alt=\"module tabac\" class=\"img-responsive\" />",
+     "mediaURL" : "http://www.bimedia.com.fr/images/fonds/actu_module_tabac2.png",
+     "mediaALT" : "module tabac"
+    },
+    {"url": "bimedia.content({ content : 'materiels' })",
+     "txt": "Le Scan'up est un scanner mobile nouvelle génération malin et performant qui simplifie votre quotidien",
+     "media" : "<img src=\"http://www.bimedia.com.fr/images/fonds/actu_scanup2.png\" alt=\"scanner mobile\" class=\"img-responsive\" />",
+     "mediaURL" : "http://www.bimedia.com.fr/images/fonds/actu_scanup2.png",
+     "mediaALT" : "scanner mobile"
+    },
+    {"url": "diversifier.content({ content: 'dematerialisation' })",
+     "txt": "Grâce aux partenaires WebToStore de Bimedia, les clients e-commerce deviennent aussi les vôtres : ils font leurs achats en ligne puis les payent dans votre point de vente.",
+     "media" : "<img src=\"http://www.bimedia.com.fr/images/fonds/actu_webtostore.jpg\" alt=\"WebToStore\" class=\"img-responsive\" />",
+     "mediaURL" : "http://www.bimedia.com.fr/images/fonds/actu_webtostore.jpg",
+     "mediaALT" : "WebToStore"
+    }
+]

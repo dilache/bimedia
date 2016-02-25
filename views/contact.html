@@ -1,0 +1,73 @@
+<div class="row main contact">
+    <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="enteteLogo">
+            <h1>Prenons contact !</h1>
+        </div>
+        <div class="col-xs-12">
+            <a class="numtel" href="tel:0970828580" title="Prix d'un appel local"><span>025</span> 105 8888</a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12 adresse">
+           <h3>BIMEDIA<span> siège social</span></h3>
+            <p>Parc Eco 85-2<br />
+            62, impasse Paul Renaud<br />85000 La Roche-Sur-Yon</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12 adresse">
+           <h3>BIMEDIA<span> Paris</span></h3> 
+            <p>26, rue Brunet<br />75017 Paris</p>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-xs-12">
+        <p class="small"><i>Formulaire non fonctionnel, exemple de présentation</i></p><br />
+        <form name="f_contact" class="form-horizontal" action="" method="post">
+            <div style="display:none;"><input type="hidden" name="winnie" /></div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="nom">Nom *</label>
+                    <div class="col-sm-9"><input class="form-control" type="text" name="nom" value="" required placeholder="Nom" id="nom" /></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="prenom">Prénom *</label>
+                    <div class="col-sm-9"><input class="form-control" type="text" name="prenom" value="" required placeholder="Prénom" id="prenom" /></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="email">Email *</label>
+                    <div class="col-sm-9"><input class="form-control" type="email" name="email" value="" required placeholder="Email" id="email" /></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="tel">Tél *</label>
+                    <div class="col-sm-9"><input class="form-control" type="tel" name="tel" pattern="\d{2}( )?\d{2}( )?\d{2}( )?\d{2}( )?\d{2}( )?" value="" required placeholder="Tél" id="tel" /></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="departement">Département *</label>
+                    <div class="col-sm-9"><input class="form-control" type="text" name="departement" pattern="[0-9]{2,3}?" value="" required placeholder="Département" id="departement" /></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="objet">Objet *</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" name="objet" id="objet" required>
+                            <option value="">Choisir</option>
+                            <option value="Demander un rendez-vous">Demander un rendez-vous</option>
+                            <option value="Obtenir des informations commerciales">Obtenir des informations commerciales</option>
+                            <option value="Déposer une candidature">Déposer une candidature</option>
+                            <option value="Devenir partenaire">Devenir partenaire</option>
+                            <option value="Contacter le service Presse">Contacter le service Presse</option>
+                            <option value="Autres demandes">Autres demandes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="message">Message *</label>
+                    <div class="col-sm-9"><textarea class="form-control" name="message" required placeholder="Votre message" id="message"></textarea></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-11 control-label" for="checkboxRobot">Confirmez que ce message n'est pas un spam en cochant cette case.</label>
+                    <div class="col-xs-1"><input class="form-control" type="checkbox" name="nobot" required="true" id="checkboxRobot" class="css-checkbox" /></div>
+                </div>
+                <div class="form-group buttons_control">
+                    <button name="envoi" id="btn_envoyer" type="submit" class="btn btn-primary">Envoyer le message</button>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</div>

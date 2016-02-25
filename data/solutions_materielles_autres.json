@@ -1,0 +1,26 @@
+[
+    {"nom": "TPE",
+     "extra": "",
+     "intro": "",
+     "image": "http://www.bimedia.com.fr/images/TPE_3.png",
+     "atouts": [
+         "Rapide et innovant",
+         "Utilisation souple et confortable",
+         "Lecture des puces NFC pour le paiement sans contact ",
+         "Communication intelligente entre le TPE et votre caisse Bimedia"
+     ],
+     "plus":"Le montant à encaisser est directement envoyé sur votre TPE depuis votre caisse Bimedia"
+    },
+    {"nom": "SCANNU'UP",
+     "extra": "Nouvelle interface",
+     "intro": "Il est temps de gagner du temps ! Malin et performant, le scanner mobile nouvelle génération qui simplifie votre quotidien :",
+      "image": "http://www.bimedia.com.fr/images/scanup2.png",
+     "atouts": [
+         "Lecteur code-barres haute performance 1D/2D. ",
+         "Grand écran tactile pour une lisibilité optimale.",
+         "Fonctionnalités presse, tabac et librairie*.",
+         "Synchronisation en temps réel avec la caisse."
+     ],
+     "plus":"*Nécessite un abonnement DILICOM."
+    }
+]

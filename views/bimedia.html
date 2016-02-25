@@ -1,0 +1,38 @@
+<div class="row main societe">
+	<div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="enteteLogo">
+            <h1>La Société</h1>
+        </div>
+        <h2><i class="fa fa-quote-left fa-lg"></i> Notre business : développer le vôtre <i class="fa fa-quote-right fa-lg"></i></h2>
+        <p>Avec les solutions et l’accompagnement qui vous réussissent.</p>
+        <p>Avec plus de treize années passées aux côtés des commerces de proximité, Bimedia bénéficie d’une expertise unique qui privilégie l’innovation sous toutes ses formes pour les aider à vendre plus et mieux.<br />C’est dans cette perspective que les équipes de Bimedia prennent un soin tout particulier à préserver la relation qu’elles ont su construire avec leurs clients.<br />À votre écoute pour anticiper les besoins de la profession, nous avons au ﬁl des années bouleversé le quotidien de milliers de buralistes, diffuseurs de presse et libraires qui nous font conﬁance. Matériel innovant, logiciels métiers, services exclusifs et accompagnement professionnel sont les clés de votre succès que nous vous proposons.<br />Vous allez également découvrir la B happy +, notre nouvelle caisse haut de gamme, + adaptable, + robuste et
+        + confortable.</p><p class="text-right">Entrez dès aujourd’hui dans l’univers Bimedia. </p>
+        <h2>Les solutions business qui vous réussisent</h2>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <h3>Notre mission</h3>
+            <p>Vous aider à vendre plus et mieux.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <h3>Notre vision</h3>
+        <p>Développer le meilleur de l’innovation au service de votre point de vente.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <h3>Notre engagement</h3>
+        <p>Vous satisfaire au quotidien en vous accompagnant vers le commerce de demain.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <h3>Nos valeurs</h3>
+        <p>Satisfaction clients, innovation, expertise, simplicité, travail d’équipe.</p>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-xs-12 revuepresse">
+        <h2>Revue de Presse</h2>
+        <div data-ng-controller="RevuePresseCtrl">
+            <div data-ng-repeat="rp in revuedepresse">
+                <h3>{{rp.titre}}</h3>
+                <a href="{{rp.pdf}}" title="Télécharger le document" target="_blank"><i class="fa fa-file-pdf-o"></i>
+ {{rp.presse}}</a>
+            </div>
+       </div>
+    </div>
+</div>

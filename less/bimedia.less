@@ -1,0 +1,598 @@
+//out: ../css/bimedia.css, compress: true
+// background
+@background:#ececec;
+// rub BIMEDIA
+@rub_bimedia:#BFCD32;
+@rub_bimedia_child:#DBE0AD;
+@rub_bimedia_border:#ececec;
+// rub SOLUTION BIMEDIA
+@rub_solutionbimedia:#0FAABE;
+@rub_solutionbimedia_child:#80C7D0;
+@rub_solutionbimedia_border:#ececec;
+// rub DIVERSIFIER SON ACTIVITE
+@rub_diversifier:#56257E;
+@rub_diversifier_child:#A074C6;
+@rub_diversifier_border:#ececec;
+// rub BIMEDIA ET VOUS
+@rub_bimediavous:#941A65;
+// rub E-SHOP
+@rub_eshop:#ECECEC;
+@rub_eshop_link:#55257e;
+// rub CONTACT
+@rub_contact:#00A9A5;
+
+/* tailles ecrans */
+@smallPhoneWidth:320px;
+@phoneWidth:480px;
+@tabletWidth:781px;
+@smallScreenWidth:992px;
+@screenWidth:1200px;
+
+p, ul, li, ul li {
+    margin:0;
+    /*padding:0;*/
+}
+a:hover,
+a.btn-link:hover {
+    text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+hr {
+    margin:0;
+}
+.clearfix {
+    height:0;
+}
+html {
+    overflow-y: scroll
+}
+body {
+    background: @background;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #333!important;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	position:relative;
+    /* Move down content because we have a fixed navbar that is 50px tall */
+    padding-top: 60px;
+}
+.row {
+   margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.row>div {
+    margin-bottom: 15px
+}
+/* ----------------------------------------- #page-wrapper */
+#page-wrapper {
+    padding-left: 70px;
+    height: 100%;
+   @media only screen and (max-width:640px) {
+        padding-left: 50px;
+    }
+}
+@media only screen and (min-width:561px) {
+    #page-wrapper.open {
+        padding-left: 250px
+    }
+}
+@media only screen and (max-width:560px) {
+    #page-wrapper.open {
+        padding-left: 70px
+    }
+}
+#page-wrapper.open #sidebar-wrapper {
+    left: 150px
+}
+#sidebar-wrapper {
+    margin-left: -150px;
+    left: -54px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    z-index: 999;
+	
+}
+
+#page-wrapper,
+#sidebar-wrapper {
+    transition: all .4s ease 0s
+}
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator,
+.sidebar-footer,
+ul.sidebar .sidebar-list a:hover,
+ul.sidebar .sidebar-main a {
+    background: #313131;
+}
+#page-wrapper:not(.open) ul.sidebar {
+    bottom: 0
+}
+
+#page-wrapper:not(.open) ul.sidebar .sidebar-title {
+    display: none;
+    height: 0;
+    text-indent: -100px
+}
+
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
+    display: block;
+    height: 2px;
+    margin: 13px 0
+}
+
+#page-wrapper:not(.open) ul.sidebar .sidebar-list a:hover span {
+    /*border-left: 3px solid #e99d1a;
+    text-indent: 22px*/
+    background-color: @background;
+}
+
+/* ----------------------------------------- content-wrapper */
+#content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto
+}
+
+/* ----------------------------------------- footer */
+div.footer {
+    background-color: #CACACA;
+    margin-bottom: 0;
+    padding:10px 0;
+    p {
+        padding:10px;
+        font-size: 12px ;
+        text-align: center;
+    }
+}
+
+/* ----------------------------------------- sidebar-wrapper */
+#sidebar-wrapper {
+    background: #30426a
+}
+
+/* ----------------------------------------- sidebar */
+ul.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-indent: 10px;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+ul.sidebar li a {
+    color: #fff;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 250px
+}
+
+ul.sidebar .sidebar-main {
+    height: 60px
+}
+
+ul.sidebar .sidebar-main a {
+    font-size: 18px;
+    line-height: 60px
+}
+
+ul.sidebar .sidebar-main .menu-icon {
+    float: right;
+    font-size: 18px;
+    padding-right: 15px;
+    line-height: 60px;
+    
+}
+
+ul.sidebar .sidebar-title {
+    color: #738bc0;
+    font-size: 12px;
+    height: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+    transition: all .6s ease 0s
+}
+
+ul.sidebar .sidebar-list {
+    height: 40px;
+}
+ul.sidebar .sidebar-list.coul_bimedia a {
+	background-color:#BFCD32;
+}
+ul.sidebar .sidebar-list.coul_bimedia a:not(:first-child) {
+	background-color:#DBE0AD;
+     color:#7e8a0a;
+	/*border-bottom:1px solid #ececec;*/
+}
+ul.sidebar .sidebar-list.coul_bimedia a:not(:first-child):hover,
+ul.sidebar .sidebar-list.coul_solution a:not(:first-child):hover,
+ul.sidebar .sidebar-list.coul_activite a:not(:first-child):hover {
+	text-indent: 22px
+}
+ul.sidebar .sidebar-list.coul_bimedia a:not(:first-child):hover .menu-icon ,
+ul.sidebar .sidebar-list.coul_solution a:not(:first-child):hover .menu-icon ,
+ul.sidebar .sidebar-list.coul_activite a:not(:first-child):hover .menu-icon  {
+	text-indent: 10px
+}
+
+ul.sidebar .sidebar-list.coul_bimedia a:last-child {
+	border-bottom:1px solid #ececec;
+}
+
+ul.sidebar .sidebar-list.coul_solution a {
+	background-color:#0FAABE;
+}
+ul.sidebar .sidebar-list.coul_solution a:not(:first-child) {
+	background-color:#80C7D0;
+	border-bottom:1px solid #ececec;
+    color:#066f7d;
+}
+ul.sidebar .sidebar-list.coul_solution a:last-child {
+	border-bottom:none;
+}
+
+ul.sidebar .sidebar-list.coul_activite a {
+	background-color:#56257E;
+}
+ul.sidebar .sidebar-list.coul_activite a:not(:first-child) {
+	background-color:#A074C6;
+	border-bottom:1px solid #ececec;
+    color:#55257e;
+   
+}
+ul.sidebar .sidebar-list.coul_activite a:last-child {
+	border-bottom:none;
+}
+ul.sidebar .sidebar-list.coul_bimedianous a {
+	background-color:#941A65;
+}
+ul.sidebar .sidebar-list.coul_contact a {
+	background-color:#00A9A5;
+}
+ul.sidebar .sidebar-list.coul_eshop a {
+	background-color:#ECECEC;
+	color:#55257e;
+}
+
+ul.sidebar .sidebar-list a{
+    background-color:green;
+}
+ul.sidebar .sidebar-list a {
+    /*text-indent: 25px;*/
+    font-size: 13px;
+    /*color: #b2bfdc;*/
+    line-height: 40px;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+
+ul.sidebar .sidebar-list a:hover {
+    /*color: #fff;
+    border-left: 3px solid #e99d1a;
+    text-indent: 22px*/
+}
+
+ul.sidebar .sidebar-list a:hover .menu-icon {
+    /*text-indent: 25px*/
+}
+
+ul.sidebar .sidebar-list .menu-icon {
+    float: right;
+    padding-right: 5px;
+    line-height: 40px;
+    width: 50px;
+    text-align: center;
+}
+.navbar-fixed-top {
+  border: 0;
+}
+/* Hide for mobile, show later */
+.sidebar {
+  /*display: none;*/
+  position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+/* ----------------------------------------- header */
+.row.header {
+    height: 60px;
+    background: #313131;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.liensHeader {
+    margin-top:-10px;
+}
+a.rdvLink {
+    display: inline-block;
+    color:#fff;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+    @media (max-width: @smallScreenWidth) {
+        font-size: 15px; display: none;
+    }
+}
+a.rdvLink:hover {
+    color:@rub_solutionbimedia;
+}
+
+/*@media (min-width: @smallScreenWidth) and (orentation: landscape) {
+    .liensHeader {
+        display: none;
+    }
+}*/
+    
+@media (max-width: @phoneWidth) {
+    .rdvLink,
+    .liensHeader {
+        display: none;
+    }
+}
+
+.row.header .meta .page {
+    font-size: 17px;
+    padding-top: 11px
+}
+
+.row.header .meta div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+/* ----------------------------------------- main */
+.main {
+    background: url("http://www.bimedia.com.fr/images/fonds/ruban.jpg") no-repeat bottom right;
+    padding: 20px;
+
+    h1, h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+@media (max-width: 640px) {
+  .main {
+   padding: 10px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+/* ----------------------------------------- home */
+div.home {
+    div.homeIntro {
+       position: relative;
+       background: url("http://www.bimedia.com.fr/images/fonds/bg-home8.jpg") no-repeat 0 -40px;
+       background-size: contain;
+       height:590px;
+        @media (max-width: @smallPhoneWidth) {
+              background-position: 0 -20px ;
+                height:610px;
+            }
+       div.enteteLogo {
+            width:50%;
+            height:40%;
+           background-size: 100%;
+            @media (max-width: @smallPhoneWidth) {
+                width:98%;
+                margin-top:130px;
+            }
+           img {
+                width:95%;
+            }
+           h1.homeSlug {
+                padding-top: 0;
+                padding-bottom: 50px;
+                font-weight: 700;
+                color:#1fb2ae;
+                font-size:25px;
+                text-transform: uppercase;
+                line-height: 24px;
+               @media (max-width: @smallPhoneWidth) {
+                    padding-top: 0px;
+                    font-size:19px;
+                    line-height: 20px;
+                    margin-top:0px;
+                }
+               @media (max-width: @phoneWidth) {
+                    @media (min-width: @smallPhoneWidth) {
+                        margin-top:100px;
+                   }
+               }
+           }
+        }
+        div.homeTexte{
+            width:96%;
+            position: absolute;
+            bottom:1%;
+            font-size:14px;
+        }
+    }
+}
+div.homeNews {
+    border:1px solid @rub_solutionbimedia_child;
+    padding-bottom:15px;
+}
+/* ----------------------------------------- entete logo */
+div.enteteLogo {
+    position: relative;
+    background: url("http://www.bimedia.com.fr/images/titre-bimedia-hp2.png") no-repeat 0 0;
+    background-size: 50%;
+    padding-top: 7%;
+    @media (max-width: @tabletWidth) {
+         background-size: 100%;
+    }
+    @media (min-width: 768px) {
+    /*@media (max-width: @PhoneWidth) {*/
+       background-size: 50%;
+    }
+}
+/* ----------------------------------------- societe */
+.societe {
+    h1,h2,h3 {
+        color:@rub_bimedia;
+    }
+    h2 {
+        i {
+            font-size: 1em;
+        }
+    }
+    h3 {
+        text-transform: uppercase;
+        font-weight:700;
+        color:#666;
+        border-bottom:1px solid @rub_bimedia_child;
+    }
+    .revuepresse {
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
+/* ----------------------------------------- solutions */
+div.solutions {
+    /*padding:15px;*/
+    div.b_solutions {
+        border:1px solid @rub_solutionbimedia_child;
+        padding-bottom:15px;
+    }
+     h1,h2,h3 {
+        color:@rub_solutionbimedia
+    }
+}
+.listeLogiciels {
+    h3 {
+        padding-left:40px;
+        line-height: 36px;
+         background: url("http://www.bimedia.com.fr/images/fonds/bg_solutions_pictos.jpg") no-repeat 0 0;
+    }
+}
+.boulangerie {
+    h1,h2,h3 {
+        color:@rub_bimediavous;
+    }
+}
+/* ----------------------------------------- diversifier */
+.diversifier {
+    h1,h2,h3 {
+        color:@rub_diversifier;
+    }
+    div.partenaires {
+        /*border:1px solid @rub_diversifier_child;*/
+        padding:10px;
+        
+        img {
+            display: inline-block;
+            margin: 3px;
+        }
+    }
+}
+/* ----------------------------------------- bimedia vous */
+.bimediavous {
+    h1,h2,h3 {
+        color:@rub_bimediavous;
+    }
+}
+/* ----------------------------------------- contact */
+.contact {
+    h1,h2,h3 {
+        color:@rub_contact;
+    }
+    .btn-primary {
+        background-color: @rub_contact;
+    }
+    .form-horizontal {
+        padding-left:10px; 
+        position: relative;
+        float:left;
+        border-left:1px solid @rub_contact;
+    }
+    .numtel {
+        color:@rub_contact;
+        font-weight:700;
+        font-size:60px;
+        line-height: 120px;
+        display: block;
+        margin: 10% auto;
+        text-align: center;
+        span {
+            display: inline-block;
+            background-color:@rub_contact;
+            color:#333;
+            padding: 0 10px;
+        }
+        @media (max-width: @smallScreenWidth) {
+            font-size:50px;
+        }
+    }
+    .adresse {
+        h3 {
+            span {
+                display: block;
+                font-size:18px;
+                font-weight:100;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+/* -----------------------------------------  */
+
+/* -----------------------------------------  */
+
+/* -----------------------------------------  */
+
+/* -----------------------------------------  */
+
+/* -----------------------------------------  */
+

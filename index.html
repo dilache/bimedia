@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr" ng-app="bimedia">
+<head>
+<base href="http://loc.bimedia.com" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bimedia</title>
+<meta charset="UTF-8">
+<meta name="Description" content="Site internet de bimedia avec Framework AngularJS">
+<meta name="author" lang="fr" content="Didier LACHEZE">
+<link href="bower_components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="bower_components/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/bimedia.css" rel="stylesheet" type="text/css">
+</head>
+<!--<body ng-controller="ScrollCtrl">-->
+<body resize ng-controller="navCtrl">
+<div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+    <div ng-controller="navigationCtrl" id="sidebar-wrapper" ng-include="navigation"></div>
+    <div id="content-wrapper">
+        <div class="page-content">
+            <div ng-controller="headerCtrl" class="row header navbar-fixed-top" ng-include="header"></div>
+            <div ui-view></div>
+        </div>
+        <div ng-controller="footerCtrl" class="row" ng-include="footer"></div>
+    </div>
+	
+</div>
+<script src="bower_components/jquery/jquery-2.1.1.min.js"></script>
+<script src="bower_components/bootstrap/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular/angular-ui-router.min.js"></script>
+<script src="bower_components/angular/angular-sanitize.min.js"></script>
+<!--<script src="bower_components/angular/angular-scroll.min.js"></script>-->
+<script src="app/bimedia.js"></script>
+<script src="app/controllers/app.js"></script>
+<script src="app/controllers/home.js"></script>
+<script src="app/controllers/bimedia.js"></script>
+<script src="app/controllers/solution-bimedia.js"></script>
+<script src="app/directives/sideNavResize.js"></script>
+</body>
+</html>

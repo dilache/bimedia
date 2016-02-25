@@ -1,0 +1,24 @@
+[
+    {"nom": "La B HAPPY+",
+     "style":"float:right;",
+     "image": "http://www.bimedia.com.fr/images/caisse-la-Bhappy3.png",
+     "classDivImg": "col-md-12",
+     "imgProduit": "http://www.bimedia.com.fr/images/fonds/bg-solutions2.jpg",
+     "classDivImgProduit": "media-right col-xs-12 col-md-12",
+     "atouts": [
+         "+ Adaptable : flexible et modulaire grâce ces 5 supports de fixation différents.",
+         "+ Robuste : écran blindé résistant à la poussière et aux projections d’eau.",
+         "+ Confortable : écran ultra réactif dernière technologie."
+     ]
+    },
+    {"nom": "La B FRIENDLY",
+     "style":"float:left;",
+     "image": "http://www.bimedia.com.fr/images/caisse-la-B-friendly3.jpg",
+     "classDivImg": "col-xs-12",
+     "classDivProduit": "hidden-xs hidden-sm hidden-md hidden-lg",
+     "atouts": [
+         "Simple & économique",
+         "Classique & fonctionnelle"
+     ]
+    }
+]
