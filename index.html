@@ -1,18 +1,16 @@
 <!doctype html>
 <html lang="fr" ng-app="bimedia">
 <head>
-<base href="http://loc.bimedia.com" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>bimedia</title>
 <meta charset="UTF-8">
 <meta name="Description" content="Site internet de bimedia avec Framework AngularJS">
 <meta name="author" lang="fr" content="Didier LACHEZE">
-<link href="bower_components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="bower_components/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="css/bimedia.css" rel="stylesheet" type="text/css">
 </head>
-<!--<body ng-controller="ScrollCtrl">-->
 <body resize ng-controller="navCtrl">
 <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
     <div ng-controller="navigationCtrl" id="sidebar-wrapper" ng-include="navigation"></div>
@@ -23,14 +21,12 @@
         </div>
         <div ng-controller="footerCtrl" class="row" ng-include="footer"></div>
     </div>
-	
 </div>
-<script src="bower_components/jquery/jquery-2.1.1.min.js"></script>
-<script src="bower_components/bootstrap/js/bootstrap.min.js"></script>
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular/angular-ui-router.min.js"></script>
-<script src="bower_components/angular/angular-sanitize.min.js"></script>
-<!--<script src="bower_components/angular/angular-scroll.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://code.angularjs.org/1.5.0/angular.min.js"></script>
+<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+<script src="https://code.angularjs.org/1.5.0/angular-sanitize.min.js"></script>
 <script src="app/bimedia.js"></script>
 <script src="app/controllers/app.js"></script>
 <script src="app/controllers/home.js"></script>
