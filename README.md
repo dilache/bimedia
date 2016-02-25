@@ -1,4 +1,5 @@
 # Bimedia
+Site internet de bimedia avec Framework AngularJS
 
 ## Prérequis
 Le package bower de NodeJS :
