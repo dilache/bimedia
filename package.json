@@ -1,0 +1,22 @@
+{
+  "name": "bimedia",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dilache/bimedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dilache/bimedia/issues"
+  },
+  "homepage": "https://github.com/dilache/bimedia#readme"
+}
