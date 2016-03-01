@@ -6,9 +6,11 @@ bim
               $http) {
       $http
         .get('data/newsHomeTabacPresse.json')
-        .success(function(data, status, headers, config, statusText) {
-          $scope.newsTabacPresse = data;
-        });
+        .success(
+          function(response) {
+            $scope.newsTabacPresse = response;
+          }
+        );
     }
   ])
 

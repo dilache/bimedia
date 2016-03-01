@@ -8,8 +8,8 @@ bim
       $http
         .get('data/solutions_materielles_ecrans.json')
         .success(
-          function(data, status, headers, config, statusText) {
-            $scope.gammeMateriel = data;
+          function(response) {
+            $scope.gammeMateriel = response;
           }
         );
     }

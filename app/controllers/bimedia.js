@@ -6,9 +6,11 @@ bim
               $http) {
       $http
         .get('data/revuedepresse.json')
-        .success(function (data, status,headers, config, statusText) {
-      		$scope.revuedepresse = data;
-      	});
+        .success(
+          function (response) {
+            $scope.revuedepresse = response;
+          }
+        );
 
         $scope.newsBoulangerie = [{
           url: 'caisse-boulangerie.php',
